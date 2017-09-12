@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/com_img"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Compress Image"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/crop_img"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Crop Image"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/re_img"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Resize Image"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <!--Switch
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/switch_btn"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:text="Camera"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/switch_btn"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="File Manager"/-->
+
+        <RadioGroup
+            android:checkedButton="@+id/offer"
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/switch_out_line"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Camera"
+                android:textColor="@drawable/toggle_widget_text" />
+
+            <RadioButton
+                android:id="@+id/fm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="File Manager"
+                android:textColor="@drawable/toggle_widget_text" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/compress_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

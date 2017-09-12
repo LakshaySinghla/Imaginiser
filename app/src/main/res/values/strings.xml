@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Image Solution</string>
+    <string name="resize_caution">*You can fill only one value. The other automatically get filled according to the
+        aspect ratio of the photo.</string>
+</resources>
